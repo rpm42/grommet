@@ -1171,7 +1171,13 @@ export interface ThemeType {
       | { color?: ColorType }
       | { size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string };
     icon?: React.ReactNode;
-    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string;
+    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string | {
+      small?: string;
+      medium?: string;
+      large?: string;
+      xlarge?: string;
+      [x: string]: string | undefined;
+    };
   };
   tab?: {
     active?: {
