@@ -1172,10 +1172,11 @@ export interface ThemeType {
       | { size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string };
     icon?: React.ReactNode;
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string | {
-      small?: string;
-      medium?: string;
-      large?: string;
-      xlarge?: string;
+      xsmall: string
+      small: string
+      medium: string
+      large: string
+      xlarge: string
       [x: string]: string | undefined;
     };
   };
